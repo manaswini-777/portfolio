@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 420;
+  font-style: normal;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+  position: sticky;
+  color:rgb(32, 32, 32)
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: rgb(34, 25, 25) (235, 0, 235);
+  transition: 0.25s;
+}
+body {
+  background-color: rgb(56, 172, 85);
+}
+.me {
+  margin-left: 100px;
+  margin-top: 175px;
+  font-size: 30px;
+  float: left;
+}
+img {
+  float: right;
+  width: 300px;
+  height: 300px;
+  margin-right: 200px;
+  margin-top: 85px;
+  box-shadow: 10px 10px 10px black;
+}
+.about {
+  margin-top: 150px;
+  float: right;
+  font-weight: bold;
+  
+}
+
+.about-text {
+  padding: 10px;
+  display: flex;
+}
+.about-text img {
+  width: 350px;
+}
+.about-context {
+  padding: 20px;
+  font-size: 45px;
+  font-weight: 450;
+  font-style: normal;
+}
+.about-context p{
+    font-size: 30px;
+    font-weight: 400;
+  font-style: normal;
+
+}
+p {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
+h2 {
+  text-align: center;
+}
+.skill {
+  color: black;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: rgb(117, 149, 168);
+}
+.skill li {
+  justify-content: space-between;
+  padding: 10px;
+  margin-left: 150px;
+}
+.h3 {
+  text-align: center;
+  color: rgb(26, 24, 24);
+}
+.contact {
+  color: rgb(17, 16, 16);
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: rgb(189, 228, 126);
+}
+.contact li {
+  justify-content: space-between;
+  padding: 12px;
+  margin-left: 150px;
+}
+.head {
+  font-family: "Mukta", sans-serif;
+  font-weight: 420;
+  font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+    </style>
+   
+</head>
+<body>
+    <header>
+        <div class="head">
+            <nav>
+                <h1>Portfolio</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="me">
+            <h3>Hello,it's Me</h3>
+            <h1>Manaswini Bethanamudi</h1>
+            <h3>And I'm a frontend Developer</h3>
+            </div>
+            <img style=" border-radius: 50% 50%;" src="data:image/jpeg;base64,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" alt="">
+            </div>
+            </header>
+            <div class="about" id="about" style="background-color: rgb(170, 205, 207)">
+                <br><br>
+                <h2>ABOUT ME</span></h2>
+                <div class="about-text">
+                    <div class="about-img">
+                        <img src="https://media.dev.to/cdn-cgi/image/width=1600,height=900,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwhh1lpihw7h587pb2iuc.png" alt="">
+                    </div>
+                <div class="about-context">
+                <p> I am a passionate and dedicated Frontend Developer with a strong background in creating visually appealing and user-friendly web applications. With a keen eye for design and a deep understanding of modern web technologies, I strive to deliver high-quality digital experiences that meet both user needs and business objectives. </p>
+            </div>        
+            </div>
+                    <div class="skill" id="skills">
+                        <br>
+                        <br>
+                        <br>
+                        <h2>SKILLS</h2>
+                        <br>
+                        <ul>
+                            <li> ⭐ Developed and maintained user interfaces for various web applications.</li>
+                            <li> ⭐ Skilled in HTML,CSS3,JavaScript ,Testing and debugging,UI/UX design.</li>
+                            <li> ⭐ Ability to create responsive layouts using media queries and viewport units.</li>
+                            <li> ⭐ Experience with frontend frameworks such as Node.js,Angular.</li>
+                            <br>
+                            <h3 class="h3">Technical Skills</h3>
+                            <ul>
+                                <li><i class="fa-brands fa-html5"></i> HTML</li>
+                                <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+                                <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                                <li> Responsive design</li>
+                                <li> soft skills</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="contact" id="contact">
+                        <br><br><br>
+                        <h2>CONTACT</h2>
+                        <ul>
+                            <li><i class="fa-solid fa-envelope"></i> <a href="#"> Gmail:abcd@gmail.com </a></li>
+                            <li><i class="fa-brands fa-github"></i> <a href="#"> GitHub</a></li>
+                            <li> <i class="fa-brands fa-linkedin"></i><a href="#"> LinkedIn</a></li>
+                          </ul>
+                    </div>
+                    <br>
+                    <br>
+                    <h2>THANK YOU</h2>
+                    <br>
+</body>
+
+</html>
